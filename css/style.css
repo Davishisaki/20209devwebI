@@ -193,6 +193,30 @@ section {
   width: 50%;
 }
 
+#amazing-section .col2{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-read {
+  width: 200px;
+  height: 30px;
+  background-color: var(--cor-secundaria);
+  border: none;
+}
+
+.button-read a {
+  color: white;
+  text-decoration: none;
+}
+
+.button-read:hover{
+  background-color: var(--cor-primaria);
+}
+
 #section-best .row{
   width: 100%;
   display: flex;
