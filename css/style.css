@@ -183,7 +183,7 @@ section {
 #amazing-section .row{
   width: 100%;
   display: flex;
-  background-color: var(--cor-secundaria);
+  background-color: var(--cor-primaria);
   color: white;
 }
 #amazing-section .col1{
@@ -199,6 +199,7 @@ section {
   gap: 20px;
   justify-content: center;
   align-items: center;
+  padding: 50px;
 }
 
 .button-read {
@@ -232,6 +233,15 @@ section {
   
 }
 
+#section-best .col1{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
 .col1 figure img {
   width: 100%;
 }
@@ -250,6 +260,19 @@ section {
   color: white;
 }
 
+.container-title-our {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 60px;
+}
+
+.container-title-our h2 {
+  font-size: 26px;
+}
+
 .card-our{
 width: 300px;
   border: 2px;
@@ -263,4 +286,41 @@ width: 300px;
   background-color: var(--cor-secundaria);
   color: white;
   padding: 30px;
+}
+
+.card-our h3 {
+  font-size: 26px;
+}
+
+.card-our p {
+  font-size: 18px;
+}
+
+#section-hebert {
+  background-image: url("../img/sec-4.png");
+  background-size: cover;
+  height: 492px;
+  background-position: center;
+  background-size: cover;
+  padding: var(--espacamento);
+  width: 100%;
+}
+
+.hebert-container {
+  width: 100%;
+  padding: 200px 50px 50px 50px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: white;
+
+}
+
+.description-hebert {
+  font-size: 26;
+}
+.hebert-title {
+  font-size: 36px;
 }
