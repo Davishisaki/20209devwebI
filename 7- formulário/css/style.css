@@ -1,72 +1,93 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* não esquecer !*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+form {
+  background-color: rgba(0,85,255,1);
+  background-image: linear-gradient( 288deg,  rgba(0,85,255,1) 1.5%, rgba(4,56,115,1) 91.6% );
+  box-shadow: -3px 9px 18px -3px rgba(0, 0, 0, 0.73);
+  width: 60%;
+  margin: auto;
+  padding: 20px;
 
-.form {
-    background-color:#30cfd0;
-    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
-    box-shadow: -3px 9px 19px;
-    width: 60%;
-    margin: auto;
-    padding: 20px;
-
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
 }
 
 .container-form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
-.container-form fieldset{
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+.container-form fieldset {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .container-form fieldset > div {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 
-input[type="text"]input[type="email"]input[type="tel"]input[type="date"] {
-    padding: 5px;
-    border: none;
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select,
+textarea {
+  padding: 5px;
+  border: none;
+  color: rgba(0,85,255,1);
 }
 
-imput[type="text"]::placeholder {
-    color:#330867;
+input[type="text"]::placeholder {
+  color: #0073ff;
 }
 
-imput[type="text"]:focus {
-    outline: none;
-    border-color: #30cfd0;
+input[type="text"]:focus {
+  outline: none;
+  border: 2px solid #02dafb;
+}
+
+input[type="text"]:invalid,
+input[type="email"]:invalid {
+  background-color: aqua;
+}
+
+input[type="text"]:disabled {
+  background-color: grey;
 }
 
 textarea {
-    resize: none;
-    min-height: 150px;
-    resize: none;
-    outline: none;
+  min-height: 150px;
+  resize: none;
+  outline: none;
+}
+
+.container-botoes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 
 .container-botoes input {
-    width: 100px;
-    height: 35px;
-    background-color:#00fbfb;
-    border: none;
-    cursor: pointer;
+  width: 100px;
+  height: 35px;
+  background-color: #00eaff;
+  border: none;
+  cursor: pointer;
 }
 
 .container-botoes input:hover {
-    background-color: #009292;
+  background-color: #0015ff;
 }
